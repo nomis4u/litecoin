@@ -18,20 +18,23 @@ Assumptions
 ## Jenkinsfile
 Sample Jenkinsfile for deploying the application to kubernetes.
 
+# Anchore - Image Scan
+Scans docker image for any vulnerability.
+
 ## docker-compose.yaml
-For scanning the image for any vulnerability. The file is downloaded from https://engine.anchore.io/docs/quickstart/docker-compose.yaml
+The file is downloaded from https://engine.anchore.io/docs/quickstart/docker-compose.yaml
 ```
 # curl -O https://engine.anchore.io/docs/quickstart/docker-compose.yaml
 # docker-compose up -d
 ```
 Above command will bring up all the necessary docker containers required to scan the docker image
 
-# Add Docker Image for analysis
+## Add Docker Image for analysis
 ```
 # docker-compose exec api anchore-cli image add nomdoc/litecoin:0.18.1
 ```
 
-# Check for Vulneribility
+## Check for Vulneribility
 ```
 # docker-compose exec api anchore-cli image vul nomdoc/litecoin:0.18.1
 # docker-compose exec api anchore-cli evaluate check nomdoc/litecoin:0.18.1

@@ -8,7 +8,7 @@ Respoiroty contains Dockerfile to run Litecoin in Docker and as stateful in Kube
 
 
 ## Dockerfile
-Using `sha256sum -c` we are checking the checksum of the downloaded release and fails the build process if it returns an error.
+Using `sha256sum` we are checking the checksum of the downloaded release and fails the build process if it returns an error.
 
 ## litecoin-statefulset.yaml
 Assumptions

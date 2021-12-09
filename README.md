@@ -12,8 +12,8 @@ Using `sha256sum` we are checking the checksum of the downloaded release and fai
 
 ## litecoin-statefulset.yaml
 Assumptions
-- There is already a namesapce `litecoin`
-- Standard stoarge class is available
+- Namespace litecoin exist
+- Standard stoarge class is available for dynamic disk provisioing
 
 ## Jenkinsfile
 Sample Jenkinsfile for deploying the application to kubernetes.

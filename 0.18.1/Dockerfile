@@ -11,6 +11,7 @@ RUN apt-get install -y \
 ENV LITECOIN_VERSION=0.18.1
 
 # Download the binaries and gpg signed checksums. Check the checksums and proceed to extract the files if its valid
+# sha256sum command was copied and modified from a google search result
 RUN curl -SLO https://download.litecoin.org/litecoin-${LITECOIN_VERSION}/linux/litecoin-${LITECOIN_VERSION}-x86_64-linux-gnu.tar.gz && \
     curl -SLO https://download.litecoin.org/litecoin-${LITECOIN_VERSION}/linux/litecoin-${LITECOIN_VERSION}-linux-signatures.asc && \
     gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys "FE3348877809386C" && \

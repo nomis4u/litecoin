@@ -6,7 +6,11 @@ Respoiroty contains Dockerfile to run Litecoin in Docker and as stateful in Kube
 - kubectl - jenkins server to have kubectl binary installed
 - kubeconfig - Kubeconfig which has permission to apply the statefulset in the appropriate location
 
-
+## Build and Tag
+```
+# cd litecoin-0.18.1
+# docker build -t litecoin .
+```
 ## Dockerfile
 Using `sha256sum` we are checking the checksum of the downloaded release and fails the build process if it returns an error.
 

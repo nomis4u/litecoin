@@ -2,7 +2,7 @@
 import sys
 from optparse import OptionParser
 
-# Ignore volaume if the output has some special characters or empty
+# Ignore volume if the output has some special characters or empty
 ignore_volume = ["-", " ", ":", "/"]
 
 

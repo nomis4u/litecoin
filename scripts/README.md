@@ -1,4 +1,5 @@
-# Get traded volume by coin in each year in millions(M)
+# Get traded volume by coin in each year in millions(M) from a given csv file. Bash one liner and eqivalent Python script. 
+Bash one liner to get the output.
 Python script accepts the csv file as an input and display the each coins traded volume by year in millions
 
 ## Requirements

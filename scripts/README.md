@@ -3,6 +3,12 @@ Python script accepts the csv file as an input and display the each coins traded
 
 ## Requirements
 - python3
+
+## CSV Fields
+```
+Currency,Date,Open,High,Low,Close,Volume,Market Cap
+ripple,04-23-2019,0.323844,0.328396,0.320919,0.321222,1077333990,"13,49,29,33,875"
+```
 ## Usage
 ```
 ./get_traded_volume.py -f [csv-filepath] -y [year]
